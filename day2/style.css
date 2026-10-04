@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #202b29;
+  background: #f3f6f2;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  padding: 2rem 1.5rem 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  background: #174c43;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+header p {
+  margin: 0.25rem 0 1rem;
+  color: #d9eee4;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  padding: 0.35rem 0.7rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #174c43;
+  background: #d9eee4;
+}
+
+main {
+  width: calc(100% - 2rem);
+  max-width: 860px;
+  margin: 2rem auto;
+}
+
+main > h2 {
+  margin-top: 0;
+  color: #174c43;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid #dbe4df;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgb(32 43 41 / 8%);
+}
+
+section h3 {
+  margin-top: 0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  min-height: 6rem;
+  padding: 1rem;
+  border-top: 3px solid #cf644c;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgb(32 43 41 / 8%);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+caption {
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #aebdb6;
+  text-align: left;
+}
+
+th {
+  color: #ffffff;
+  background: #28685b;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 560px;
+}
+
+form p {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+form > label {
+  margin-bottom: -0.65rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #8a9b92;
+  border-radius: 4px;
+  background: #ffffff;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #28685b;
+  outline-offset: 2px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  justify-self: start;
+  padding: 0.7rem 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #a64231;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+button:hover,
+button:focus-visible {
+  background: #7e3025;
+  transform: translateY(-1px);
+}
+
+footer {
+  padding: 1rem;
+  color: #e4eee9;
+  background: #202b29;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    width: calc(100% - 1.5rem);
+    margin: 1.5rem auto;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  th,
+  td {
+    padding: 0.6rem;
+  }
+}
