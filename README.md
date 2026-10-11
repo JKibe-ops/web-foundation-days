@@ -55,15 +55,25 @@ Day 5 introduces asynchronous requests and REST API design:
 
 Open `day5/index.html` in a browser to load and filter the users. An internet connection is required to fetch the user data.
 
+### Day 6: Relational databases with SQL
+
+Day 6 models students, courses, and enrolments in SQLite:
+
+- `school.sql` creates related tables, adds sample records, and demonstrates the required queries and grade update.
+- `school-design.md` explains the relationships, an index, and the choice of SQL for this system.
+
+Run `day6/school.sql` in an SQLite playground to create the sample school database and run its queries.
+
 ## Browse the project on GitHub
 
-1. Open a day folder, such as `day1/`, `day2/`, `day3/`, `day4/`, or `day5/`, from the repository file list.
+1. Open a day folder, such as `day1/`, `day2/`, `day3/`, `day4/`, `day5/`, or `day6/`, from the repository file list.
 2. Select an HTML file to read its source directly on GitHub.
 3. In Day 2, open `style.css` to see the styles used by both pages.
 4. In Day 3, open `script.js` to see the notes functions and console tests.
 5. In Day 4, open `script.js` to see the editor's interactions and browser storage.
 6. In Day 5, open `users.js` for the fetch and filter interactions or `library-api.md` for the API design.
-7. Use the folder breadcrumb or the repository name to return to the project root.
+7. In Day 6, open `school.sql` for the schema and queries or `school-design.md` for the design explanation.
+8. Use the folder breadcrumb or the repository name to return to the project root.
 
 ## Project layout
 
@@ -83,10 +93,13 @@ web-foundations-days/
 │   ├── index.html
 │   ├── script.js
 │   └── style.css
-└── day5/
-    ├── index.html
-    ├── library-api.md
-    └── users.js
+├── day5/
+│   ├── index.html
+│   ├── library-api.md
+│   └── users.js
+└── day6/
+    ├── school-design.md
+    └── school.sql
 ```
 
-To view a page as a website, open the relevant `index.html` or `about.html` with a local web server such as VS Code Live Server. For Day 3, open `day3/index.html`; for Day 4, open `day4/index.html`; for Day 5, open `day5/index.html`. GitHub's file view displays the source code; it does not run the page as a website.
+To view a page as a website, open the relevant `index.html` or `about.html` with a local web server such as VS Code Live Server. For Day 3, open `day3/index.html`; for Day 4, open `day4/index.html`; for Day 5, open `day5/index.html`. Run `day6/school.sql` in an SQLite playground to execute the database examples. GitHub's file view displays the source code; it does not run the page as a website.
