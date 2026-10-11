@@ -45,14 +45,25 @@ Day 4 turns QuickNotes into an interactive note editor:
 
 Open `day4/index.html` in a browser to try the editor. The draft and theme are stored in that browser's local storage.
 
+### Day 5: Fetching and filtering users
+
+Day 5 introduces asynchronous requests and REST API design:
+
+- `index.html` provides a button to load users, a labelled name filter, a status message, and an initially empty list.
+- `users.js` fetches users from JSONPlaceholder, displays their details safely, reports loading outcomes, and filters the loaded users without another request.
+- `library-api.md` describes REST endpoints and common error responses for a library's books resource.
+
+Open `day5/index.html` in a browser to load and filter the users. An internet connection is required to fetch the user data.
+
 ## Browse the project on GitHub
 
-1. Open a day folder, such as `day1/`, `day2/`, `day3/`, or `day4/`, from the repository file list.
+1. Open a day folder, such as `day1/`, `day2/`, `day3/`, `day4/`, or `day5/`, from the repository file list.
 2. Select an HTML file to read its source directly on GitHub.
 3. In Day 2, open `style.css` to see the styles used by both pages.
 4. In Day 3, open `script.js` to see the notes functions and console tests.
 5. In Day 4, open `script.js` to see the editor's interactions and browser storage.
-6. Use the folder breadcrumb or the repository name to return to the project root.
+6. In Day 5, open `users.js` for the fetch and filter interactions or `library-api.md` for the API design.
+7. Use the folder breadcrumb or the repository name to return to the project root.
 
 ## Project layout
 
@@ -68,10 +79,14 @@ web-foundations-days/
 ├── day3/
 │   ├── index.html
 │   └── script.js
-└── day4/
+├── day4/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+└── day5/
     ├── index.html
-    ├── script.js
-    └── style.css
+    ├── library-api.md
+    └── users.js
 ```
 
-To view a page as a website, open the relevant `index.html` or `about.html` with a local web server such as VS Code Live Server. For Day 3, open `day3/index.html`; for Day 4, open `day4/index.html`. GitHub's file view displays the source code; it does not run the page as a website.
+To view a page as a website, open the relevant `index.html` or `about.html` with a local web server such as VS Code Live Server. For Day 3, open `day3/index.html`; for Day 4, open `day4/index.html`; for Day 5, open `day5/index.html`. GitHub's file view displays the source code; it does not run the page as a website.
