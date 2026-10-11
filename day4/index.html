@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickNotes Character Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>QuickNotes</h1>
+      <p>Write a note and keep an eye on its length.</p>
+    </header>
+
+    <section aria-labelledby="note-heading">
+      <h2 id="note-heading">Your note</h2>
+      <label for="note-text">Note (maximum 200 characters)</label>
+      <textarea id="note-text" rows="8" aria-describedby="char-count word-count"></textarea>
+      <div class="counts" aria-live="polite">
+        <p id="char-count">0 / 200 characters</p>
+        <p id="word-count">0 words</p>
+      </div>
+      <div class="actions">
+        <button id="clear-btn" type="button">Clear</button>
+        <button id="theme-toggle" type="button">Dark mode</button>
+      </div>
+      <p class="hint">Press Escape while writing to clear your note.</p>
+    </section>
+  </main>
+</body>
+</html>
